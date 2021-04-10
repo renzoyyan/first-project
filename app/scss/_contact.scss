@@ -1,0 +1,112 @@
+.contact{
+
+    h4{
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+    &__left{
+        align-self: start;
+        p{
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.8;
+            margin-bottom: 2.875rem;
+            margin-top: 0;
+        }
+    }
+
+    &__inner{
+        .row{
+            display: flex;
+            align-items: center;
+            img{
+                width: 1.875rem;
+                height: 1.875rem;
+            }
+            .contact__info{
+                margin-left: 0.9375rem;
+                line-height: 1.8;
+
+                .head{
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    text-transform: uppercase;
+                }
+
+                .sub-head{
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .row:nth-child(1){
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    &__right{
+        .form-groups{
+            display: flex;
+            margin-bottom: 1rem;
+
+            .name, .email{
+                width: 100%;
+            }
+            .email{
+                margin-left: 10px;
+            }
+        }
+        .form-group:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 18px;
+
+            
+
+        }
+        .form-group:nth-child(3){
+            flex-direction: column;
+            height: 100px;
+
+            textarea{
+                width: 100%;
+                height: 100%;
+                padding: 12px;
+                resize: none;
+                border: 1px solid lightgray;
+                border-radius: 6px;
+                outline: none;
+                font-family: 'Poppins';
+
+                &:focus{
+                    border-color: $primary-color;
+                }
+                
+            }
+        }
+        
+    }
+
+    &__btn{
+        padding: 0.75rem 2.75rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        background: #651399;
+        font-family: Poppins;
+        outline: none;
+        cursor: pointer;
+        letter-spacing: 0.4px;
+        transition: all 300ms ease-in-out;
+
+        &:hover{
+            background-color: $pink;
+            color: $primary-color;
+        }
+    }
+
+
+}
+

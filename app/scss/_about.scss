@@ -1,0 +1,27 @@
+.about{
+    
+    &__left{
+        
+
+        svg{
+            vertical-align: middle;
+        }
+        
+    }
+
+    &__right{
+
+        text-align: left;
+    
+        span{
+            font-weight: 500;
+            font-size: 1.25rem;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 300;
+            color: #272727;
+            line-height: 1.8;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.services{
+    background: #F1ABF4;
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+
+    &__card{
+      padding: 2.5rem;
+      border-radius: 0.625rem;
+      background: #fff;
+      text-align: center;
+      transition: transform 200ms ease-in-out;
+
+      &:hover{
+        transform: scale(1.04);
+      }
+    }
+    &__card:nth-child(2){
+      .services__img img{
+        height: 3.125rem;
+      }
+    }
+    &__img{
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+        img{
+          width: 100%;
+        }
+    }
+
+    &__title{
+      margin-top: 0.8125rem;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    &__info p{
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+
+
+}
+
+
+
