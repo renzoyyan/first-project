@@ -320,31 +320,58 @@ label {
   margin-bottom: 1.25rem;
 }
 
-.contact__right .form-groups {
+.contact__right .fields {
   display: flex;
   margin-bottom: 1rem;
 }
 
-.contact__right .form-groups .name, .contact__right .form-groups .email {
-  width: 100%;
-}
-
-.contact__right .form-groups .email {
+.contact__right .fields .form-group:nth-child(2) {
   margin-left: 10px;
 }
 
-.contact__right .form-group:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 18px;
+.contact__right .fields i.fa {
+  position: absolute;
+  top: 37px;
+  right: 14px;
+  visibility: hidden;
 }
 
-.contact__right .form-group:nth-child(3) {
-  flex-direction: column;
+.contact__right .form-group {
+  width: 100%;
+  position: relative;
+}
+
+.contact__right .field {
+  position: relative;
+}
+
+.contact__right .field.subject {
+  margin-bottom: 25px;
+}
+
+.contact__right .field.subject i.fa {
+  position: absolute;
+  top: 37px;
+  right: 14px;
+  visibility: hidden;
+}
+
+.contact__right .field.message {
+  height: 50px;
+}
+
+.contact__right .field.message > .form-group {
   height: 100px;
 }
 
-.contact__right .form-group:nth-child(3) textarea {
+.contact__right .field.message i.fa {
+  position: absolute;
+  top: 40px;
+  right: 14px;
+  visibility: hidden;
+}
+
+.contact__right .field.message textarea {
   width: 100%;
   height: 100%;
   padding: 12px;
@@ -355,13 +382,37 @@ label {
   font-family: 'Poppins';
 }
 
-.contact__right .form-group:nth-child(3) textarea:focus {
+.contact__right .field.message textarea:focus {
   border-color: #4C0D74;
 }
 
+.contact__right .form-group.error input, .contact__right .form-group.error textarea, .contact__right .field > .form-group.error input, .contact__right .field > .form-group.error textarea {
+  border-color: #ec615b;
+  visibility: visible;
+}
+
+.contact__right .form-group.error .msg, .contact__right .field > .form-group.error .msg {
+  visibility: visible;
+}
+
+.contact__right .form-group.error .fa-exclamation-circle, .contact__right .field > .form-group.error .fa-exclamation-circle {
+  color: #ec615b;
+  visibility: visible;
+}
+
+.contact__right .form-group .msg, .contact__right .field > .form-group .msg {
+  position: absolute;
+  bottom: -18px;
+  right: 0px;
+  color: #ec615b;
+  font-size: 11px;
+  font-style: italic;
+  visibility: hidden;
+}
+
 .contact__btn {
-  padding: 0.75rem 2.75rem;
-  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin-top: 4rem;
   border: none;
   border-radius: 5px;
   color: #fff;

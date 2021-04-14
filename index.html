@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
     <title>whales</title>
 </head>
@@ -959,26 +961,41 @@
           </div>
           <div class="column contact__right">
             <h4>Message Us</h4>
-            <form>
-              <div class="form-groups">
-                <div class="name">
+            <form id="form">
+              <div class="fields">
+                <div class="form-group">
                   <label for="name">Name:</label>
-                  <input type="text" id="name" name="name">
+                  <input type="text" id="name" name="name" value="">
+                  <small class="msg"></small>
+                  <i class="fa fa-exclamation-circle"></i>
                 </div>
-                <div class="email">
+                <div class="form-group">
                   <label for="email">Email:</label>
-                  <input type="text" name="email" id="email">
+                  <input type="text" name="email" id="email" value="">
+                  <small class="msg"></small>
+                  <i class="fa fa-exclamation-circle"></i>
+                
                 </div>
                 
               </div>
-              <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject">
-              </div>
-              <div class="form-group">
-                <textarea name="textarea" id="" cols="30" rows="10" placeholder="Message"></textarea>
-              </div>
-              <button class="contact__btn">Submit</button>
+             
+                <div class="field subject">
+                  <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" value="">
+                    <small class="msg"></small>
+                    <i class="fa fa-exclamation-circle"></i>
+                  </div>
+                </div>
+              
+                <div class="field message">
+                  <div class="form-group">
+                    <textarea name="textarea" id="message"  cols="30" rows="10" placeholder="Message" value=""></textarea>
+                    <small class="msg"></small>
+                  </div>
+                </div>
+              
+              <button class="contact__btn">Send Message</button>
             </form>
           </div>
         </div>
@@ -993,6 +1010,8 @@
           </div>
       </div>
     </footer>
+    <script src="app/js/contact.js"></script>
     <script src="app/js/index.js"></script>
+    
 </body>
 </html>
