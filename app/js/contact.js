@@ -63,7 +63,7 @@
 
         if(isValid){
 
-            setTimeout("location.href= 'https://formspree.io/f/mdoykngd';", 2000);
+            setTimeout("location.href= '';", 2000);
             
         }
     }

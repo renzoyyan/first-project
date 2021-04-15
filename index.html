@@ -961,17 +961,17 @@
           </div>
           <div class="column contact__right">
             <h4>Message Us</h4>
-            <form id="form"  method="POST">
+            <form id="form" action="https://formspree.io/f/mdoykngd"  method="POST">
               <div class="fields">
                 <div class="form-group">
                   <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" value="">
+                  <input type="text" id="name" name="name" value="" required>
                   <small class="msg"></small>
                   <i class="fa fa-exclamation-circle"></i>
                 </div>
                 <div class="form-group">
                   <label for="email">Email:</label>
-                  <input type="text" name="email" id="email" value="">
+                  <input type="text" name="email" id="email" value="" required>
                   <small class="msg"></small>
                   <i class="fa fa-exclamation-circle"></i>
                 
@@ -982,7 +982,7 @@
                 <div class="field subject">
                   <div class="form-group">
                     <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" value="">
+                    <input type="text" name="subject" id="subject" value="" required>
                     <small class="msg"></small>
                     <i class="fa fa-exclamation-circle"></i>
                   </div>
@@ -990,7 +990,7 @@
               
                 <div class="field message">
                   <div class="form-group">
-                    <textarea name="textarea" id="message"  cols="30" rows="10" placeholder="Message" value=""></textarea>
+                    <textarea name="textarea" id="message"  cols="30" rows="10" placeholder="Message" value="" required></textarea>
                     <small class="msg"></small>
                   </div>
                 </div>
