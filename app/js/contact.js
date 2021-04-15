@@ -4,7 +4,7 @@
     const email = document.getElementById('email');
     const subject = document.getElementById('subject');
     const message = document.getElementById('message');
-
+    const success = document.querySelector('.contact__success');
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -48,6 +48,24 @@
             setSuccessFor(message);
         }
         
+        if(nameValue === '' || emailValue === '' || !isEmail(emailValue) || subjectValue === '' || messageValue === ''){
+           isValid == false;
+            e.preventDefault();
+        }else{
+            if(success.classList.contains('show')){
+                success.classList.remove('show');
+            }else{
+                success.classList.add('show');
+            }
+            isValid == true;
+            
+        }
+
+        if(isValid){
+
+            setTimeout("location.href= 'https://formspree.io/f/mdoykngd';", 2000);
+            
+        }
     }
 
 
@@ -63,9 +81,18 @@
     function setSuccessFor(input){
         const formGroup = input.parentElement;
         formGroup.className = 'form-group';
+
+        
     }
 
     function isEmail(email){
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
     }
+
+   function isValid(){
+    
+    return Boolean;
+   }
+
+  

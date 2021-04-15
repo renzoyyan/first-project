@@ -160,6 +160,19 @@
         }
     }
 
+    &__success{
+        margin-left: 1rem;
+        background: #73ff71;
+        width: 150px;
+        padding: 0.5rem 0.8rem;
+        border-radius: 5px;
+        color: #4C0D74;
+        visibility: hidden;
+
+        &.show{
+            visibility: visible;
+        }
+    }
 
 }
 
